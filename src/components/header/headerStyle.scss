@@ -8,13 +8,18 @@
   background-position: -25vw;
   background-size: cover;
   background-repeat: no-repeat;
+  gap: 10vh;
+  .hedding-title {
+    margin: 5vh 0 0 10px;
+    text-align: left;
+  }
   .heddings-wrapper {
     display: flex;
     flex-direction: column;
     align-items: start;
     text-align: left;
     margin: 10px 10px;
-    gap: 20px;
+    gap: 2vh;
 
     .old-price {
       font-size: 1.2em;
@@ -33,5 +38,10 @@
       font-size: 1.5em;
       color: orange;
     }
+  }
+  .links-wrappper {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
   }
 }

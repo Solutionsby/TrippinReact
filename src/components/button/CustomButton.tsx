@@ -1,3 +1,4 @@
+import "./customButton.scss";
 import React from "react";
 
 type CustomButtonProps = {
