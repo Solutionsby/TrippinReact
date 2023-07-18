@@ -1,0 +1,37 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  margin-top: 10vh;
+  background-image: url("./img/mainPhoto.png");
+  background-position: -25vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .heddings-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin: 10px 10px;
+    gap: 20px;
+
+    .old-price {
+      font-size: 1.2em;
+      text-decoration: line-through;
+      text-decoration-color: red;
+      text-decoration-thickness: 4px;
+      @if &hide {
+        display: none;
+      }
+      @if &show {
+        display: inline;
+      }
+    }
+
+    .new-price {
+      font-size: 1.5em;
+      color: orange;
+    }
+  }
+}
