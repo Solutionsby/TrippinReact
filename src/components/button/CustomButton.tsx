@@ -2,9 +2,10 @@ import "./customButton.scss";
 import React from "react";
 
 type CustomButtonProps = {
-  href: string;
+  href: string | undefined;
   className: string;
   children: React.ReactNode; // Lepsze używanie ogólnego typu React.ReactNode
+  onClick: () => void;
 };
 
 export const CustomButton = ({

@@ -1,0 +1,67 @@
+.navigation-wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  background-color: #000;
+  justify-content: space-between;
+  .navigation-logo {
+    height: 100%;
+    width: 30%;
+    margin-left: 5vw;
+    background-image: url("./logo/trippin_logo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .navigation-menu {
+    display: flex;
+    margin-right: 5vw;
+    width: 20%;
+    height: 100%;
+    .navigation-menu-div-wrappers {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      color: #000;
+      height: 100%;
+      width: 100%;
+      align-items: start;
+      justify-content: center;
+      &:hover {
+        background-color: #000;
+        .burger-menu-div {
+          width: 50%;
+          &:nth-of-type(2) {
+            width: 100%;
+          }
+        }
+      }
+      .burger-menu-div {
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 10px;
+        transition: 2s;
+
+        &.active {
+          margin-bottom: 0;
+          transform: rotate(45deg);
+          align-self: center;
+          width: 50%;
+        }
+        &:nth-of-type(2) {
+          width: 50%;
+          align-self: end;
+          &.active {
+            transform: rotate(-45deg);
+            align-self: center;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
