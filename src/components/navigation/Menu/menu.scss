@@ -1,0 +1,47 @@
+.navigation-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: fixed;
+  left: 1000px;
+  bottom: 0;
+  top: 10vh;
+  width: 100%;
+  background-color: #000;
+  transition: 2s;
+  z-index: 2;
+  &.active {
+    left: 0;
+  }
+  ul {
+    list-style: none;
+    text-align: left;
+    width: 80%;
+    li {
+      margin-bottom: 20px;
+
+      a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        font-size: 26px;
+
+        color: white;
+        &:active {
+          color: white;
+        }
+      }
+    }
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      a {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        width: 45%;
+      }
+    }
+  }
+}
