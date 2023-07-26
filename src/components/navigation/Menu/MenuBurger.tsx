@@ -1,56 +1,68 @@
-import contact from "../../../db/contact.json";
+import { InstagramIcon } from "../../../assets/SVG/Instagram";
+import { FacebookIcon } from "../../../assets/SVG/Facebook";
+import data from "../../../db/data.json";
+import { CustomButton } from "../../button/CustomButton";
 import "./menu.scss";
 
 export const MenuBurger = ({
-  onClick,
   isOpen,
+  setIsOpen,
 }: {
-  onClick: () => void;
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-  console.log(isOpen);
+  const handleScrollToSection = (sectionId: string) => {
+    const sectionChose = document.getElementById(sectionId);
+    if (sectionChose) {
+      sectionChose.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+    }
+  };
   return (
     <div className={`navigation-menu-list ${isOpen ? "active" : ""}`}>
       <ul>
         <li>
-          <a href="http://" onClick={onClick}></a>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>O nas</h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
-            O nas
-          </a>
-        </li>
-        <li>
-          <a href="http://" onClick={onClick}>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>
             Nasza oferta
-          </a>
+          </h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>
             Jak to działa
-          </a>
+          </h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
-            FAQ
-          </a>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>FAQ</h3>
         </li>
         <li>
           <div className="contact-wrapper">
-            <a href={`mailto:${contact.contatcs.adresEmail}`} onClick={onClick}>
-              {contact.contatcs.adresEmail}
+            <a href={`mailto:${data.contatact.adresEmail}`}>
+              {data.contatact.adresEmail}
             </a>
-            <a
-              href={`tel:+48${contact.contatcs.telephoneNumber}`}
-              onClick={onClick}
-            >
-              {contact.contatcs.telephoneNumber}
+            <a href={`tel:+48${data.contatact.telephoneNumber}`}>
+              {data.contatact.telephoneNumber}
             </a>
           </div>
         </li>
         <li>
-          <a href="http://" onClick={onClick}></a>
+          <div className="social-media-contener">
+            <a href={data.contatact.websiteFacebook}>
+              <FacebookIcon />
+            </a>
+            <a href={data.contatact.websiteInstagram}>
+              <InstagramIcon />
+            </a>
+          </div>
         </li>
+        <CustomButton
+          href={data.contatact.websiteHoppyGo}
+          className={"hoppyGo-button"}
+        >
+          Zarezerwuj
+        </CustomButton>
       </ul>
     </div>
   );

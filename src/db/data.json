@@ -1,0 +1,42 @@
+{
+  "contatact": {
+    "adresEmail": "wynajmij@trippin.pl",
+    "telephoneNumber": "501-924-273",
+    "websiteFacebook": "https://www.facebook.com/trippinpolska",
+    "websiteInstagram": "https://www.instagram.com/trippin_polska/",
+    "websiteHoppyGo": "https://hoppygo.com/pl/user-profile/498bc75260/cars"
+  },
+  "price": {
+    "oldPrice": 0,
+    "newPrice": "300 zł"
+  },
+  "content": [
+    {
+      "id": 0,
+      "title": "O nas",
+      "textContent": "Moglibyśmy napisać, że Trippin to nowatorskie podejście do wynajmu samochodów. Moglibyśmy, bo to prawda, ale zamiast tego przedstawimy naszą wizje w trzech słowach."
+    },
+    {
+      "id": 1,
+      "title": "Wiatr",
+      "textContent": "W Trippin wynajmujesz kabriolet. I to kabriolet nie byle jaki, bo w naszej flocie są same mercedesy SL i CLK. Otwierasz dach, czujesz rześki podmuch wiatru, ciepło słonecznych promieni i świeży zapach natury.",
+      "image": "./img/wind.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Przygoda",
+      "textContent": "Możesz wynająć kabriolet na jeden dzień, na weekend lub na dłużej.To od Ciebie zależy, jak długo potrwa Twoja przygoda. PS. Przy dłuższym wynajmie możesz liczyć na zniżkę.",
+      "image": "./img/adventure.png"
+    },
+    {
+      "id": 3,
+      "title": "Nieznane",
+      "textContent": "W kabrioletach Trippin jest nawigacja, a w niej nasze autorskie trasy po Kaszubach, uwzględniające atrakcje turystyczne, godne polecenia punkty na mapie kulinarnej oraz cuda kaszubskiej natury. Wybierasz trasę, klikasz 'start' i odkrywasz nieznane.",
+      "image": "./img/unknow.png"
+    }
+  ],
+
+  "cars": {
+    "test": "test"
+  }
+}

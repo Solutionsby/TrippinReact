@@ -26,10 +26,10 @@
       text-decoration: line-through;
       text-decoration-color: red;
       text-decoration-thickness: 4px;
-      @if &hide {
+      &.hide {
         display: none;
       }
-      @if &show {
+      &.show {
         display: inline;
       }
     }
