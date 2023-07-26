@@ -1,4 +1,7 @@
+import { InstagramIcon } from "../../../assets/SVG/Instagram";
+import { FacebookIcon } from "../../../assets/SVG/facebook";
 import contact from "../../../db/contact.json";
+import { CustomButton } from "../../button/CustomButton";
 import "./menu.scss";
 
 export const MenuBurger = ({
@@ -8,32 +11,30 @@ export const MenuBurger = ({
   onClick: () => void;
   isOpen: boolean;
 }) => {
-  console.log(isOpen);
+  const handleScrollToSection = (sectionId: string) => {
+    const sectionChose = document.getElementById(sectionId);
+    if (sectionChose) {
+      sectionChose.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className={`navigation-menu-list ${isOpen ? "active" : ""}`}>
       <ul>
         <li>
-          <a href="http://" onClick={onClick}></a>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>O nas</h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
-            O nas
-          </a>
-        </li>
-        <li>
-          <a href="http://" onClick={onClick}>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>
             Nasza oferta
-          </a>
+          </h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>
             Jak to działa
-          </a>
+          </h3>
         </li>
         <li>
-          <a href="http://" onClick={onClick}>
-            FAQ
-          </a>
+          <h3 onClick={() => handleScrollToSection("aboutSection")}>FAQ</h3>
         </li>
         <li>
           <div className="contact-wrapper">
@@ -49,8 +50,21 @@ export const MenuBurger = ({
           </div>
         </li>
         <li>
-          <a href="http://" onClick={onClick}></a>
+          <div className="social-media-contener">
+            <a href="">
+              <FacebookIcon />
+            </a>
+            <a href="">
+              <InstagramIcon />
+            </a>
+          </div>
         </li>
+        <CustomButton
+          href={"https://hoppygo.com/pl/user-profile/498bc75260/cars"}
+          className={"hoppyGo-button"}
+        >
+          Zarezerwuj
+        </CustomButton>
       </ul>
     </div>
   );

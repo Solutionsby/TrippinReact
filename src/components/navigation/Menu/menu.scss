@@ -5,7 +5,7 @@
   position: fixed;
   left: 1000px;
   bottom: 0;
-  top: 10vh;
+  top: 9vh;
   width: 100%;
   background-color: #000;
   transition: 2s;
@@ -20,19 +20,14 @@
     li {
       margin-bottom: 20px;
 
-      a {
+      h3 {
         display: block;
         width: 100%;
-        text-decoration: none;
-        font-size: 26px;
-
-        color: white;
-        &:active {
-          color: white;
-        }
+        cursor: pointer;
       }
     }
-    .contact-wrapper {
+    .contact-wrapper,
+    .social-media-contener {
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
@@ -40,8 +35,18 @@
         text-align: center;
         font-size: 12px;
         font-weight: bold;
+        color: white;
+        text-decoration: none;
         width: 45%;
+        &:active {
+          color: white;
+        }
       }
     }
   }
+}
+.hoppyGo-button {
+  margin-top: 10vh;
+  width: 100%;
+  background-color: orange;
 }
