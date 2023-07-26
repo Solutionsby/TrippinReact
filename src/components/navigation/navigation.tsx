@@ -9,9 +9,9 @@ export const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleMenuClick = () => {
-    setIsOpen(false);
-  };
+  // const handleMenuClick = () => {
+  //   setIsOpen(false);
+  // };
 
   return (
     <div className="navigation-wrapper">
@@ -26,7 +26,7 @@ export const Navigation = () => {
           <div className={`burger-menu-div ${isOpen ? "active" : ""}`}></div>
         </div>
       </div>
-      <MenuBurger onClick={handleMenuClick} isOpen={isOpen} />
+      <MenuBurger isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

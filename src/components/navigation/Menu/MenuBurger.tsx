@@ -1,20 +1,21 @@
 import { InstagramIcon } from "../../../assets/SVG/Instagram";
-import { FacebookIcon } from "../../../assets/SVG/facebook";
-import contact from "../../../db/contact.json";
+import { FacebookIcon } from "../../../assets/SVG/Facebook";
+import data from "../../../db/data.json";
 import { CustomButton } from "../../button/CustomButton";
 import "./menu.scss";
 
 export const MenuBurger = ({
-  onClick,
   isOpen,
+  setIsOpen,
 }: {
-  onClick: () => void;
   isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const handleScrollToSection = (sectionId: string) => {
     const sectionChose = document.getElementById(sectionId);
     if (sectionChose) {
       sectionChose.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
   };
   return (
@@ -38,29 +39,26 @@ export const MenuBurger = ({
         </li>
         <li>
           <div className="contact-wrapper">
-            <a href={`mailto:${contact.contatcs.adresEmail}`} onClick={onClick}>
-              {contact.contatcs.adresEmail}
+            <a href={`mailto:${data.contatact.adresEmail}`}>
+              {data.contatact.adresEmail}
             </a>
-            <a
-              href={`tel:+48${contact.contatcs.telephoneNumber}`}
-              onClick={onClick}
-            >
-              {contact.contatcs.telephoneNumber}
+            <a href={`tel:+48${data.contatact.telephoneNumber}`}>
+              {data.contatact.telephoneNumber}
             </a>
           </div>
         </li>
         <li>
           <div className="social-media-contener">
-            <a href="">
+            <a href={data.contatact.websiteFacebook}>
               <FacebookIcon />
             </a>
-            <a href="">
+            <a href={data.contatact.websiteInstagram}>
               <InstagramIcon />
             </a>
           </div>
         </li>
         <CustomButton
-          href={"https://hoppygo.com/pl/user-profile/498bc75260/cars"}
+          href={data.contatact.websiteHoppyGo}
           className={"hoppyGo-button"}
         >
           Zarezerwuj

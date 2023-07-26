@@ -1,0 +1,48 @@
+.section-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10vh 2vw 5vh 2vw;
+  color: black;
+  align-items: start;
+  justify-content: space-between;
+  text-align: left;
+}
+.section-about-wrapper-odd {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  .section-about-content {
+    color: white;
+    padding: 10vh 2vw 5vh 2vw;
+    align-items: start;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .section-about-image {
+    height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.section-about-wrapper-even {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  .section-about-content {
+    padding: 10vh 2vw 5vh 2vw;
+    color: black;
+    align-items: start;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .section-about-image {
+    height: 50vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
