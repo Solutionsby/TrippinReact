@@ -36,7 +36,41 @@
     }
   ],
 
-  "cars": {
-    "test": "test"
-  }
+  "cars": [
+    {
+      "id": 0,
+      "marka": "Mercedes",
+      "model": "CLK",
+      "enginePower": 272,
+      "engineCapacity": 3724
+    },
+    {
+      "id": 1,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 272,
+      "engineCapacity": 3724
+    },
+    {
+      "id": 2,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 272,
+      "engineCapacity": 4966
+    },
+    {
+      "id": 3,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 272,
+      "engineCapacity": 5987
+    },
+    {
+      "id": 3,
+      "marka": "Mercedes",
+      "model": "CLK",
+      "enginePower": 272,
+      "engineCapacity": 4966
+    }
+  ]
 }

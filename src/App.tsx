@@ -1,5 +1,6 @@
 import "./App.css";
-import { AboutSection } from "./components/aboutSection/aboutSection";
+import { AboutSection } from "./components/aboutSection/AboutSection";
+import { CarsSection } from "./components/carsSection/CarsSection";
 import { Header } from "./components/header/Header";
 import { Navigation } from "./components/navigation/navigation";
 
@@ -9,6 +10,7 @@ function App() {
       <Navigation />
       <Header />
       <AboutSection />
+      <CarsSection />
     </div>
   );
 }

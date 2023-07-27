@@ -1,3 +1,5 @@
+import { CustomButton } from "../../button/CustomButton";
+import data from "../../../db/data.json";
 import "./about.scss";
 
 export const About = ({
@@ -28,6 +30,12 @@ export const About = ({
         <div className="section-about-content">
           <h2>{title}</h2>
           <p>{textContent}</p>
+          <CustomButton
+            href={data.contatact.websiteHoppyGo}
+            className="reservation-even"
+          >
+            Zarezerwuj na HoopyGo
+          </CustomButton>
         </div>
       </div>
     );
@@ -41,6 +49,12 @@ export const About = ({
         <div className="section-about-content">
           <h2>{title}</h2>
           <p>{textContent}</p>
+          <CustomButton
+            href={data.contatact.websiteHoppyGo}
+            className="reservation-odd"
+          >
+            Zarezerwuj na HoopyGo
+          </CustomButton>
         </div>
       </div>
     );

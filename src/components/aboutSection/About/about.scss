@@ -18,6 +18,13 @@
     align-items: start;
     justify-content: space-between;
     text-align: left;
+    .reservation-odd {
+      width: 60%;
+      margin: 2vh 0 0 35%;
+      &:hover {
+        background-color: orange;
+      }
+    }
   }
   .section-about-image {
     height: 50vh;
@@ -37,6 +44,14 @@
     align-items: start;
     justify-content: space-between;
     text-align: left;
+    .reservation-even {
+      background-color: black;
+      width: 60%;
+      margin: 2vh 0 0 35%;
+      &:hover {
+        background-color: orange;
+      }
+    }
   }
   .section-about-image {
     height: 50vh;

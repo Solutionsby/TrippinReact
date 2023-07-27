@@ -25,7 +25,7 @@ export const MenuBurger = ({
           <h3 onClick={() => handleScrollToSection("aboutSection")}>O nas</h3>
         </li>
         <li>
-          <h3 onClick={() => handleScrollToSection("aboutSection")}>
+          <h3 onClick={() => handleScrollToSection("carSection")}>
             Nasza oferta
           </h3>
         </li>
