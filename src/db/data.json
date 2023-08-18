@@ -43,7 +43,12 @@
       "model": "CLK",
       "enginePower": 272,
       "engineCapacity": 3724,
-      "acceleration": 6.4
+      "acceleration": 6.4,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     },
     {
       "id": 1,
@@ -51,7 +56,12 @@
       "model": "SL",
       "enginePower": 245,
       "engineCapacity": 3724,
-      "acceleration": 7.2
+      "acceleration": 7.2,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     },
     {
       "id": 2,
@@ -59,7 +69,12 @@
       "model": "SL",
       "enginePower": 306,
       "engineCapacity": 4966,
-      "acceleration": 6.3
+      "acceleration": 6.3,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     },
     {
       "id": 3,
@@ -67,7 +82,12 @@
       "model": "SL",
       "enginePower": 500,
       "engineCapacity": 5513,
-      "acceleration": 4.7
+      "acceleration": 4.7,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     },
     {
       "id": 3,
@@ -75,7 +95,12 @@
       "model": "CLK",
       "enginePower": 306,
       "engineCapacity": 4966,
-      "acceleration": 6
+      "acceleration": 6,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     }
   ]
 }
