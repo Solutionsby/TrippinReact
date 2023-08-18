@@ -7,7 +7,7 @@
     "websiteHoppyGo": "https://hoppygo.com/pl/user-profile/498bc75260/cars"
   },
   "price": {
-    "oldPrice": 0,
+    "oldPrice": 400,
     "newPrice": "300 zł"
   },
   "content": [
@@ -36,7 +36,46 @@
     }
   ],
 
-  "cars": {
-    "test": "test"
-  }
+  "cars": [
+    {
+      "id": 0,
+      "marka": "Mercedes",
+      "model": "CLK",
+      "enginePower": 272,
+      "engineCapacity": 3724,
+      "acceleration": 6.4
+    },
+    {
+      "id": 1,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 245,
+      "engineCapacity": 3724,
+      "acceleration": 7.2
+    },
+    {
+      "id": 2,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 306,
+      "engineCapacity": 4966,
+      "acceleration": 6.3
+    },
+    {
+      "id": 3,
+      "marka": "Mercedes",
+      "model": "SL",
+      "enginePower": 500,
+      "engineCapacity": 5513,
+      "acceleration": 4.7
+    },
+    {
+      "id": 3,
+      "marka": "Mercedes",
+      "model": "CLK",
+      "enginePower": 306,
+      "engineCapacity": 4966,
+      "acceleration": 6
+    }
+  ]
 }
