@@ -1,0 +1,24 @@
+.car-specification-wrapper {
+  width: 80%;
+  color: black;
+  margin: 2vh auto;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.car-contact {
+  a {
+    color: white;
+    margin-left: 5vw;
+    text-decoration: none;
+    align-self: center;
+    &:active {
+      color: white;
+    }
+  }
+  .cars-button {
+    margin-right: 10%;
+    width: 35%;
+  }
+}
