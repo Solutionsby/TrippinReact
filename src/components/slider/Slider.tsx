@@ -13,6 +13,9 @@ export const Slider = ({ slides }: { slides: Array }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
   return (
     <div className="car-slider-wrapper">
       <div className="left-arrow slider-arrow" onClick={goToPreviuse}>
@@ -24,7 +27,15 @@ export const Slider = ({ slides }: { slides: Array }) => {
       <div
         className="car-photo"
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-      ></div>
+      >
+        <div className="slieder-dots-contener">
+          {slides.map((slide, slideIndex) => (
+            <div key={slideIndex} onClick={() => goToSlide(slideIndex)}>
+              ●{" "}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
