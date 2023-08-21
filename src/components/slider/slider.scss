@@ -1,4 +1,37 @@
 .car-slider-wrapper {
-  background-color: red;
+  position: relative;
   height: 40vh;
+}
+.car-photo {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+.slider-arrow {
+  position: absolute;
+  top: 40%;
+  font-size: 40px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+.left-arrow {
+  left: 1%;
+}
+.right-arrow {
+  right: 1%;
+}
+.slieder-dots-contener {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  div {
+    margin-right: 5px;
+  }
 }

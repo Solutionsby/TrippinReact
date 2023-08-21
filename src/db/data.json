@@ -10,6 +10,11 @@
     "oldPrice": 400,
     "newPrice": "300 zł"
   },
+  "numbers": {
+    "cars": 11,
+    "routes": 4,
+    "adventure": 100
+  },
   "content": [
     {
       "id": 0,
@@ -43,7 +48,12 @@
       "model": "CLK",
       "enginePower": 272,
       "engineCapacity": 3724,
-      "acceleration": 6.4
+      "acceleration": 6.4,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK/CLK_350/CLK350.png"
+        }
+      ]
     },
     {
       "id": 1,
@@ -51,7 +61,25 @@
       "model": "SL",
       "enginePower": 245,
       "engineCapacity": 3724,
-      "acceleration": 7.2
+      "acceleration": 7.2,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/SL350/SL350-1.jpg"
+        },
+        { "url": "/img/carsPhoto/SL350/SL350-2.jpg" },
+        {
+          "url": "/img/carsPhoto/SL350/SL350-3.jpg"
+        },
+        { "url": "/img/carsPhoto/SL350/SL350-4.jpg" },
+        {
+          "url": "/img/carsPhoto/SL350/SL350-5.jpg"
+        },
+        { "url": "/img/carsPhoto/SL350/SL350-6.jpg" },
+        {
+          "url": "/img/carsPhoto/SL350/SL350-7.jpg"
+        },
+        { "url": "/img/carsPhoto/SL350/SL350-8.jpg" }
+      ]
     },
     {
       "id": 2,
@@ -59,7 +87,30 @@
       "model": "SL",
       "enginePower": 306,
       "engineCapacity": 4966,
-      "acceleration": 6.3
+      "acceleration": 6.3,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/SL500/SL500-1.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-2.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-3.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-4.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-5.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-6.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL500/SL500-7.jpg"
+        }
+      ]
     },
     {
       "id": 3,
@@ -67,7 +118,30 @@
       "model": "SL",
       "enginePower": 500,
       "engineCapacity": 5513,
-      "acceleration": 4.7
+      "acceleration": 4.7,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/SL600/SL600-1.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-2.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-3.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-4.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-5.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-6.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/SL600/SL600-7.jpg"
+        }
+      ]
     },
     {
       "id": 3,
@@ -75,7 +149,75 @@
       "model": "CLK",
       "enginePower": 306,
       "engineCapacity": 4966,
-      "acceleration": 6
+      "acceleration": 6,
+      "slides": [
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-1.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-2.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-3.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-4.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-5.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-6.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-7.jpg"
+        },
+        {
+          "url": "/img/carsPhoto/CLK500/CLK500-8.jpg"
+        }
+      ]
+    }
+  ],
+  "FAQ": [
+    {
+      "id": 1,
+      "question": " Czy samochód mogę wynając tylko przez HoppyGo?",
+      "answer": "Nie, samochód moesz również wynająć prosto z firmy Trippin. Na Bitwy pod płowcami 61 w Sopocie. Skontaktuj się z nami."
+    },
+    {
+      "id": 2,
+      "question": " Gdzie mogę odebrać samochód ?",
+      "answer": "Samochód odbierzesz w Trippin (ul. Bitwy pod Płowcami 61, Sopot)"
+    },
+    {
+      "id": 3,
+      "question": " Czy możecie podstawić mi samochód pod wskazany adres ?",
+      "answer": "Nie, samochód możesz odebrać wyłącznie w Trippin ( ul.Bitwy pod Płowcami 61, Sopot )"
+    },
+    {
+      "id": 4,
+      "question": "Czy w cenę wliczone jest paliwo i ubezpiecznie?",
+      "answer": "Cena nie uwzględnia kosztów ubezpieczenia. O paliwo musisz zadbać sam/sama. Pamiętaj, żeby podczas zwrotu stan paliwa był nie mniejszy niż przy odbiorze samochodu."
+    },
+    {
+      "id": 5,
+      "question": "Jaki jest zakres ubezpiecznia",
+      "answer": "Samochód posiada ubezpieczenie OC"
+    },
+    {
+      "id": 6,
+      "question": " Czymogą pojawić się opłaty dodatkowe",
+      "answer": "Tak, opłaty dodatkowe mogą pojawić się w sytuacji, gdy przekroczysz dzienny limit kilometrów, który wynosi 200 km. Cena za kilometr powyżej limitu to 1 zł/km. Koszt wynajmu może się również zwiększyć w przypadku opóźnienia zwrotu samochodu. Jeżeli przyjedziesz do nas po czasie, naliczymy opłatę za dodatkowy dzień wynajmu."
+    },
+    {
+      "id": 7,
+      "question": "Czy mogę zabrać w podróz swojego pupila",
+      "answer": "Tak, pamiętaj jednak, że wszystkie nasze kabriolety (poza mercedesem CLK) są dwuosobowe, więc przestrzeń dla zwierzaka jest ograniczona."
+    },
+    {
+      "id": 8,
+      "question": "Czy mogę palić w samochodzie",
+      "answer": "Nie, zależy nam, żeby wszyscy Trippinowcy czuli się dobrze w naszych kabrioletach, dlatego w pojazdach obowiązuje zakaz palenia. Nawet przy otwartym dachu."
     }
   ]
 }

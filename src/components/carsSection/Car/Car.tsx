@@ -1,5 +1,6 @@
 import { CustomButton } from "../../button/CustomButton";
 import { Slider } from "../../slider/Slider";
+import { useState } from "react";
 import "./car.scss";
 
 export const Car = ({
@@ -11,11 +12,13 @@ export const Car = ({
   acceleration,
   link,
   telephone,
+  photo,
 }: {
   id: number;
   marka: string;
   model: string;
   link: string;
+  photo: Array;
   telephone: number;
   enginePower: number;
   engineCapacity: number;
@@ -34,7 +37,7 @@ export const Car = ({
   return (
     <div className="car-wrapper">
       <div className="car-image">
-        <Slider />
+        <Slider slides={photo} />
       </div>
       <div className="car-specification-wrapper">
         <h2>{carModel}</h2>
