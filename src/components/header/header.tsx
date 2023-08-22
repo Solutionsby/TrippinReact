@@ -32,13 +32,7 @@ export const Header = () => {
         </h3>
       </div>
       <div className="links-wrappper">
-        <CustomButton
-          href={"https://hoppygo.com/pl/user-profile/498bc75260/cars"}
-          className={"headers-links"}
-        >
-          Wynajmij na HoppyGo
-        </CustomButton>
-        <CustomButton className={"headers-links"} href={"#"}>
+        <CustomButton className={"headers-links"} href={"#aboutSection"}>
           Dowiedz się więcej
         </CustomButton>
       </div>

@@ -1,18 +1,21 @@
 import { useState } from "react";
 import "./slider.scss";
 
-export const Slider = ({ slides }: { slides: Array }) => {
+export const Slider = ({ slides }: { slides: Array<object> }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const goToPreviuse = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
+
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
   const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex);
   };

@@ -1,6 +1,5 @@
 import { CustomButton } from "../../button/CustomButton";
 import { Slider } from "../../slider/Slider";
-import { useState } from "react";
 import "./car.scss";
 
 export const Car = ({
