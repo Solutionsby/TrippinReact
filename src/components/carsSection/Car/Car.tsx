@@ -10,7 +10,6 @@ export const Car = ({
   enginePower,
   engineCapacity,
   acceleration,
-  link,
   telephone,
   photo,
 }: {
@@ -18,8 +17,8 @@ export const Car = ({
   marka: string;
   model: string;
   link: string;
-  photo: Array;
-  telephone: number;
+  photo: Array<object>;
+  telephone: string;
   enginePower: number;
   engineCapacity: number;
   acceleration: number;
@@ -59,8 +58,7 @@ export const Car = ({
         </div>
       </div>
       <div className="car-contact info">
-        <a href={`tel:+48${telephone}`}>{telephone}</a>
-        <CustomButton href={link} className="cars-button">
+        <CustomButton href={`tel:+48${telephone}`} className="cars-button">
           Zarezerwuj
         </CustomButton>
       </div>

@@ -31,7 +31,11 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  div {
+  .dots {
     margin-right: 5px;
+    color: #fff;
+  }
+  .active {
+    color: orange;
   }
 }

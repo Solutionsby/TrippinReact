@@ -11,7 +11,7 @@ export const About = ({
   id: number;
   title: string;
   textContent: string;
-  image?: string;
+  image: string;
 }) => {
   if (id === 0) {
     return (
@@ -31,10 +31,10 @@ export const About = ({
           <h2>{title}</h2>
           <p>{textContent}</p>
           <CustomButton
-            href={data.contatact.websiteHoppyGo}
+            href={`tel:+48${data.contatact.telephoneNumber}`}
             className="reservation-even"
           >
-            Zarezerwuj na HoopyGo
+            Zadzwoń
           </CustomButton>
         </div>
       </div>
@@ -50,10 +50,10 @@ export const About = ({
           <h2>{title}</h2>
           <p>{textContent}</p>
           <CustomButton
-            href={data.contatact.websiteHoppyGo}
+            href={`tel:+48${data.contatact.telephoneNumber}`}
             className="reservation-odd"
           >
-            Zarezerwuj na HoopyGo
+            Zadzwoń
           </CustomButton>
         </div>
       </div>

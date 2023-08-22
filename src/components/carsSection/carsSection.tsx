@@ -22,7 +22,7 @@ export const CarsSection = () => {
             enginePower: number;
             engineCapacity: number;
             acceleration: number;
-            slides: Array;
+            slides: Array<object>;
           }) => (
             <Car
               key={id}
@@ -31,7 +31,6 @@ export const CarsSection = () => {
               enginePower={enginePower}
               engineCapacity={engineCapacity}
               acceleration={acceleration}
-              link={car.contatact.websiteHoppyGo}
               telephone={car.contatact.telephoneNumber}
               photo={slides}
             />
