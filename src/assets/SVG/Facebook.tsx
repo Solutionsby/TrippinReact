@@ -1,12 +1,16 @@
-import React from "react";
-
-export const FacebookIcon: React.FC = () => (
+export const FacebookIcon = ({
+  width,
+  height,
+}: {
+  width: number;
+  height: number;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     viewBox="0 0 40 40"
-    width="40"
-    height="40"
+    width={width}
+    height={height}
   >
     <linearGradient
       id="a"

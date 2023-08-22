@@ -30,12 +30,7 @@ export const MenuBurger = ({
           </h3>
         </li>
         <li>
-          <h3 onClick={() => handleScrollToSection("aboutSection")}>
-            Jak to działa
-          </h3>
-        </li>
-        <li>
-          <h3 onClick={() => handleScrollToSection("aboutSection")}>FAQ</h3>
+          <h3 onClick={() => handleScrollToSection("faqSection")}>FAQ</h3>
         </li>
         <li>
           <div className="contact-wrapper">
@@ -50,10 +45,10 @@ export const MenuBurger = ({
         <li>
           <div className="social-media-contener">
             <a href={data.contatact.websiteFacebook}>
-              <FacebookIcon />
+              <FacebookIcon width={40} height={40} />
             </a>
             <a href={data.contatact.websiteInstagram}>
-              <InstagramIcon />
+              <InstagramIcon width={40} height={40} />
             </a>
           </div>
         </li>

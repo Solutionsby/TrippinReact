@@ -4,7 +4,7 @@ import { Faq } from "./faq/faq";
 
 export const FaqSection = () => {
   return (
-    <div className="faqs-section-wrapper">
+    <div className="faqs-section-wrapper" id="faqSection">
       {FAQ.map(
         ({
           id,

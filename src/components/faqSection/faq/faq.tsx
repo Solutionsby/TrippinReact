@@ -1,7 +1,13 @@
 import { useState } from "react";
 import "./faq.scss";
 
-export const Faq = ({ question, answer }) => {
+export const Faq = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
   const [open, isOpen] = useState(false);
 
   const toqqleFaq = () => {
