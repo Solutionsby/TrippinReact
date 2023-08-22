@@ -6,7 +6,6 @@ import "./baner.scss";
 export const Baner = () => {
   const myRef = useRef();
   const [startCount, setStartCount] = useState(false);
-  console.log("StartCount", startCount);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
