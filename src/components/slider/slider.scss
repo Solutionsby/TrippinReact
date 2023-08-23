@@ -39,3 +39,19 @@
     color: orange;
   }
 }
+@media (max-width: 780px) and (orientation: landscape) {
+  .car-slider-wrapper {
+    height: 65vh;
+    .car-photo {
+      width: 80%;
+      margin: 0 10%;
+      background-position: bottom;
+    }
+    .left-arrow {
+      left: 15%;
+    }
+    .right-arrow {
+      right: 15%;
+    }
+  }
+}
