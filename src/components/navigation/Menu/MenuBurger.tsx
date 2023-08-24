@@ -52,12 +52,12 @@ export const MenuBurger = ({
             </a>
           </div>
         </li>
-        <CustomButton
+        {/* <CustomButton
           href={data.contatact.websiteHoppyGo}
           className={"hoppyGo-button"}
         >
           Zarezerwuj
-        </CustomButton>
+        </CustomButton> */}
       </ul>
     </div>
   );

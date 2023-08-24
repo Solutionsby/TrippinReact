@@ -18,6 +18,7 @@
     opacity: 1;
   }
   ul {
+    margin-top: 3vh;
     list-style: none;
     text-align: left;
     width: 80%;
@@ -27,6 +28,7 @@
       h3 {
         display: block;
         width: 100%;
+        font-size: 36px;
         cursor: pointer;
       }
     }
@@ -55,7 +57,7 @@
   background-color: orange;
 }
 
-@media (max-width: 780px) and (orientation: landscape) {
+@media (orientation: landscape) {
   .navigation-menu-list {
     top: 14vh;
   }

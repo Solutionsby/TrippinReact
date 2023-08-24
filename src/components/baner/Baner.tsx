@@ -17,16 +17,35 @@ export const Baner = () => {
   return (
     <div ref={myRef} className="banner-wrapper">
       <div className="banner-cars">
-        {startCount && <CountUp start={0} end={numbers.cars} duration={15} />}
+        {startCount && (
+          <CountUp
+            className="baner-counter"
+            start={0}
+            end={numbers.cars}
+            duration={15}
+          />
+        )}
         <p>Samochodów</p>
       </div>
-      <div className="baner-routs">
-        {startCount && <CountUp start={0} end={numbers.routes} duration={7} />}
+      <div className="baner-routs ">
+        {startCount && (
+          <CountUp
+            className="baner-counter"
+            start={0}
+            end={numbers.routes}
+            duration={7}
+          />
+        )}
         <p>Trasy</p>
       </div>
       <div className="baner-adventrue">
         {startCount && (
-          <CountUp start={0} end={numbers.adventure} duration={25} />
+          <CountUp
+            className="baner-counter"
+            start={0}
+            end={numbers.adventure}
+            duration={25}
+          />
         )}
         %<p>Przygody</p>
       </div>

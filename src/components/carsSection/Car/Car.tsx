@@ -3,7 +3,6 @@ import { Slider } from "../../slider/Slider";
 import "./car.scss";
 
 export const Car = ({
-  id,
   marka,
   model,
   enginePower,
@@ -12,10 +11,8 @@ export const Car = ({
   telephone,
   photo,
 }: {
-  id: number;
   marka: string;
   model: string;
-  link: string;
   photo: Array<object>;
   telephone: string;
   enginePower: number;

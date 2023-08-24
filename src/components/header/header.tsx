@@ -14,7 +14,6 @@ export const Header = () => {
     }
   };
 
-  console.log(isPromActive);
   useEffect(() => {
     checkPromotion();
   }, []);
