@@ -39,5 +39,17 @@
   .footer-partners {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .sopocki-pratner {
+    height: 40px;
+    width: 40px;
+    background-image: url("/logo/sopocki_białe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    a {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

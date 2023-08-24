@@ -52,6 +52,9 @@ export const FooterSection = () => {
         <a href="https://www.jamel.pl">
           <JamelIcon width={50} height={50} />
         </a>
+        <a href="http://www.sopocki-zdroj.pl">
+          <div className="sopocki-pratner"></div>
+        </a>
       </div>
     </div>
   );

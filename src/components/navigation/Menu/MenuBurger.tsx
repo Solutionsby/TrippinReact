@@ -1,7 +1,6 @@
 import { InstagramIcon } from "../../../assets/SVG/Instagram";
 import { FacebookIcon } from "../../../assets/SVG/Facebook";
 import data from "../../../db/data.json";
-import { CustomButton } from "../../button/CustomButton";
 import "./menu.scss";
 
 export const MenuBurger = ({
