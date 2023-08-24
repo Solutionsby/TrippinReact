@@ -29,11 +29,15 @@ export const Slider = ({ slides }: { slides: Array<object> }) => {
       </div>
       <div
         className="car-photo"
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{
+          backgroundImage: `url(${
+            (slides[currentIndex] as { url: string }).url
+          })`,
+        }}
       >
         {" "}
         <div className="slieder-dots-contener">
-          {slides.map((slide, slideIndex: number) => (
+          {slides.map((_slide, slideIndex: number) => (
             <div
               key={slideIndex}
               className={currentIndex === slideIndex ? "active" : "dots"}

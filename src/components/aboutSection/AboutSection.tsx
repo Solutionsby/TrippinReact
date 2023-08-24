@@ -15,7 +15,7 @@ export const AboutSection = () => {
           id: number;
           title: string;
           textContent: string;
-          image?: string;
+          image: string;
         }) => (
           <About
             key={id}

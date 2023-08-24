@@ -4,14 +4,16 @@ import { numbers } from "../../db/data.json";
 import "./baner.scss";
 
 export const Baner = () => {
-  const myRef = useRef();
+  const myRef = useRef<HTMLDivElement | null>(null);
   const [startCount, setStartCount] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       setStartCount(entry.isIntersecting);
     });
-    observer.observe(myRef.current);
+    if (myRef.current) {
+      observer.observe(myRef.current);
+    }
   }, []);
 
   return (
