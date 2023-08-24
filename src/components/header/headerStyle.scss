@@ -40,9 +40,14 @@
     }
   }
   .links-wrappper {
-    width: 100%;
-    margin-left: 10px;
+    width: 90%;
+    padding-left: 10px;
     justify-content: start;
     display: flex;
+  }
+}
+@media (orientation: landscape) {
+  .header-wrapper {
+    background-position: -2vw;
   }
 }

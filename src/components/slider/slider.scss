@@ -1,11 +1,12 @@
 .car-slider-wrapper {
   position: relative;
   height: 40vh;
+  margin-top: 10px;
 }
 .car-photo {
   display: flex;
   flex-direction: column;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -37,5 +38,35 @@
   }
   .active {
     color: orange;
+  }
+}
+@media (orientation: landscape) {
+  .car-slider-wrapper {
+    .car-photo {
+      width: 80%;
+      margin: 0 10%;
+      border-radius: 10px;
+    }
+    .left-arrow {
+      left: 15%;
+    }
+    .right-arrow {
+      right: 15%;
+    }
+  }
+}
+@media (orientation: landscape) and (min-width: 1280px) {
+  .car-slider-wrapper {
+    margin-top: 10px;
+    .car-photo {
+      width: 90%;
+      margin: 0 5%;
+    }
+    .left-arrow {
+      left: 10%;
+    }
+    .right-arrow {
+      right: 10%;
+    }
   }
 }

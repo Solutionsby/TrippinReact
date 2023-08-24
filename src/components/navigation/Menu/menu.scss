@@ -3,17 +3,22 @@
   flex-direction: column;
   justify-content: left;
   position: fixed;
-  left: 1000px;
+  left: 10px;
+  overflow: hidden;
+  opacity: 0;
   bottom: 0;
   top: 9vh;
-  width: 100%;
+  width: 0;
   background-color: #000;
   transition: 2s;
   z-index: 2;
   &.active {
     left: 0;
+    width: 100%;
+    opacity: 1;
   }
   ul {
+    margin-top: 3vh;
     list-style: none;
     text-align: left;
     width: 80%;
@@ -23,6 +28,7 @@
       h3 {
         display: block;
         width: 100%;
+        font-size: 36px;
         cursor: pointer;
       }
     }
@@ -49,4 +55,10 @@
   margin-top: 10vh;
   width: 100%;
   background-color: orange;
+}
+
+@media (orientation: landscape) {
+  .navigation-menu-list {
+    top: 14vh;
+  }
 }

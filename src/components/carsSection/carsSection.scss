@@ -4,3 +4,20 @@
   padding-top: 10vh;
   background-color: #000;
 }
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  .car {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cars-section-wrapper {
+    flex-direction: row;
+  }
+}

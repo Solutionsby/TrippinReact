@@ -21,3 +21,8 @@
     width: 50%;
   }
 }
+@media (orientation: landscape) and (min-width: 1280px) {
+  .car-wrapper {
+    width: 50%;
+  }
+}
