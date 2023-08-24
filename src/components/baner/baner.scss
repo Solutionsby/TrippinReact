@@ -11,3 +11,11 @@
     border-top: solid 1px #fff;
   }
 }
+@media (min-width: 1280px) {
+  .banner-wrapper {
+    font-size: 42px;
+    p {
+      font-size: 24px;
+    }
+  }
+}

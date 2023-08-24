@@ -51,3 +51,8 @@
     background-position: -2vw;
   }
 }
+@media (orientation: landscape) and (min-width: 1280px) {
+  .custom-button {
+    width: 20%;
+  }
+}

@@ -62,3 +62,8 @@
     top: 14vh;
   }
 }
+@media (orientation: landscape) and (min-width: 1280px) {
+  .navigation-menu-list {
+    top: 9vh;
+  }
+}

@@ -122,3 +122,28 @@
     }
   }
 }
+
+@media (orientation: landscape) {
+  .section-about-wrapper {
+    h2 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .section-about-wrapper-odd {
+    .section-about-content {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .section-about-wrapper-even {
+    .section-about-content {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

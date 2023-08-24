@@ -77,3 +77,14 @@
     }
   }
 }
+@media (orientation: landscape) and (min-width: 1280px) {
+  .navigation-wrapper {
+    height: 10vh;
+    .navigation-logo {
+      width: 10%;
+    }
+    .navigation-menu {
+      width: 5%;
+    }
+  }
+}
